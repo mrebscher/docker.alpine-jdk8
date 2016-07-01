@@ -2,6 +2,7 @@ FROM alpine:3.4
 MAINTAINER mrebscher
 
 ENV JAVA_HOME=/usr/lib/jvm/default-jvm
+ENV PATH=${JAVA_HOME}/bin:$PATH
 
 RUN apk update && \
  apk add \
